@@ -46,6 +46,9 @@
 .gallery {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 .card {
@@ -65,10 +68,65 @@
 .card img {
     max-height: 400px;
     max-width: 350px;
+    background: linear-gradient(white,gray);
 }
 
 .card:hover {
     scale: 1.05;
+}
+
+.buy-now {
+    /* display: none; */
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.2s;
+    /* margin-right: 20px; */
+    /* border-radius: 5px; */
+}
+
+.buy-now:hover {
+    /* opacity: 0.75; */
+    background-color: #fff;
+    color: black;
+    scale: 1.05;
+    box-shadow: 0 2px black;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.brand {
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: gray;
+    margin-bottom: 5px;
+}
+
+.item {
+    padding: 0 ;
+    margin: 0 ;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* xs - 475px */
@@ -95,7 +153,6 @@
     }
     
     .card {
-        /* border-radius: 4px; */
         position: relative;
         overflow: hidden;
         height: 500px;
@@ -106,12 +163,16 @@
         border: 1px solid blue;
         padding: 4px;
         margin: 4px;
-        transition: scale 0.2s;
-        
+        transition: scale 0.3s;
     }
-    
-    .card:hover {
-        scale: 1.05;
+
+    .buy-now {
+        display: none;
+        bottom: 130px;
+    }
+
+    .card:hover .buy-now{
+        display: block;
     }
 
     .card img{
