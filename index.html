@@ -1,124 +1,80 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LuxWeb</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="gallery">
-            <div class="video">
-                <video id="video" width="100%" height="100%" autoplay muted loop>
-                    <source src="assets/videos/w1.mp4">
-                </video>
-            </div>
-            <div class="card">
-                <img src="assets/images/w1.webp" alt="">
-                <div class="desc">
-                        <p class="brand">
-                            Brand 1
-                        </p>
-                        <p class="item">
-                            item 1
-                        </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w2.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w7.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w1.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w2.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w7.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w1.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
-            <div class="card">
-                <img src="assets/images/w2.webp" alt="">
-                <div class="desc">
-                    <p class="brand">
-                        Brand 1
-                    </p>
-                    <p class="item">
-                        item 1
-                    </p>
-                    <p class="price"> $20</p>
-                </div>
-                <a href="#" class="buy-now">Buy now</a>
-            </div>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link href="./styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <h2 class="logo">LuxWeb</h2>
+        <nav class="navigation">
+          <ul class="nav-list">
+            <li>Home</li>
+            <li>Category</li>
+            <li>About</li>
+            <li>Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="hero-section">
+        <div class="relative">
+          <video class="hero-video" src="./assets/videos/intro.mp4" autoplay loop muted ></video>
+          <div class="hero-text">
+            <h1 class="hero-title">Feel the Fashion <br />With Us</h1>
+            <p class="hero-description">We believe that style is the ultimate form of self-expression. Our collections are designed to empower you to showcase your individuality with confidence. Discover fashion that speaks to your unique personality and lets you shine effortlessly.</p>
+          </div>
         </div>
+      </div>
+
+      <div class="category-title">Category</div>
+      <div class="categories">
+        <div class="category-card">
+          <a class="category-link" href="./mproduct.html">
+            <h1 class="category-text">Men <br/> Clothing</h1>
+            <img class="category-image" src="./assets/images/mancat.jpg" alt="Men Clothing" />
+          </a>
+        </div>
+
+        <div class="category-card">
+          <a class="category-link" href="./fproduct.html">
+            <h1 class="category-text">Women <br/> Clothing</h1>
+            <img class="category-image" src="./assets/images/femcat.jpg" alt="Women Clothing" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <div class="about">
+            <h1 class="about-title">About Us</h1>
+            <p class="about-description">Welcome to LuxWeb, where luxury meets timeless elegance. At LuxWeb, we believe that fashion is more than just clothing—it's an expression of individuality, a statement of sophistication, and a celebration of craftsmanship. Our mission is to provide discerning customers with the finest in luxury fashion, carefully curated from the world's most prestigious designers and artisans.</p>
+        </div>
+      </div>
+
+
+      <div class="contact">
+        <div class="contact-us-container">
+            <h1>Contact Us</h1>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Contact Number">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button>Send</button>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank"><img class="social-icon" src="https://cdn-icons-png.freepik.com/512/2111/2111463.png?uid=R149232872&ga=GA1.1.1235215610.1709790793" alt="Instagram"></a>
+                <a href="https://www.whatsapp.com/" target="_blank"><img class="social-icon" src="https://cdn-icons-png.freepik.com/512/733/733585.png?uid=R149232872&ga=GA1.1.1235215610.1709790793" alt="WhatsApp"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img class="social-icon" src="https://cdn-icons-png.freepik.com/512/733/733590.png?uid=R149232872&ga=GA1.1.1235215610.1709790793" alt="YouTube"></a>
+              </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-text">Copyright <img class="footer-img" src="./assets/images/copyright.png" alt="">Luxweb 2024</div>
+      </div>
     </div>
-</body> 
+  </body>
 </html>
