@@ -182,7 +182,15 @@ body {
     padding: 0;
     font-weight: bold;
     padding-right: 1rem;
+    text-decoration: none;
+    font-size: 14px;
   }
+
+  a {
+    text-decoration: none;
+    color: inherit; /* or use a specific color like color: black; */
+}
+
   .gap{
     padding: 30px 0;
   }
