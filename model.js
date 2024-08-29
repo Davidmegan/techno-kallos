@@ -1,16 +1,36 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-var btns = document.querySelectorAll(".buy-now");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btns.forEach(function(btn) {
-    btn.onclick = function() {
-        modal.style.display = "block";
+// Get the modal content elements
+var modalImage = modal.querySelector("img");
+var modalBrand = modal.querySelector(".text h1");
+var modalItem = modal.querySelector(".text p:nth-child(2)");
+var modalPrice = modal.querySelector(".price");
+var modalDiscount = modal.querySelector(".discount");
+var modalStock = modal.querySelector(".stock");
+
+// Add event listener to the gallery container
+document.querySelector(".gallery").addEventListener("click", function(event) {
+    if (event.target.classList.contains("buy-now")) {
+        var card = event.target.closest(".card");
+
+        var imgSrc = card.querySelector("img").src;
+        var brand = card.querySelector(".brand").textContent;
+        var item = card.querySelector(".item").textContent;
+        var price = card.querySelector(".price").textContent;
+
+        // Update modal content
+        modalImage.src = imgSrc;
+        modalBrand.textContent = brand;
+        modalItem.textContent = item;
+        modalPrice.textContent = price;
+        modalDiscount.textContent = "50% off"; // Static value or add logic to get this from somewhere
+        modalStock.textContent = "In stock"; // Static value or add logic to get this from somewhere
+
+        modal.style.display = "flex";
     }
 });
 

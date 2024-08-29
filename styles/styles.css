@@ -41,6 +41,7 @@
     padding-left: 0.5em;
     padding-right: 0.5em;
     border: 1px solid red;
+    position: relative;
 }
 
 .gallery {

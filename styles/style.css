@@ -1,3 +1,9 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
 body {
     margin: 0;
     font-family: Baskervville;
@@ -194,6 +200,7 @@ body {
   }
 
  .contact{
+    /* box-sizing: border-box; */
     background-color: #ded7cc;
     margin: 0;
     padding: 0;
@@ -203,9 +210,11 @@ body {
  }
 
  .contact-us-container {
+  box-sizing: border-box;
+  margin: 0;
     padding: 50px;
     border-radius: 10px;
-    width: 400px;
+    width: 500px;
 }
 .contact-us-container h1 {
     text-align: center;
@@ -215,6 +224,7 @@ body {
 }
 .contact-us-container input,
 .contact-us-container textarea {
+  box-sizing: border-box;
     width: 100%;
     padding: 15px;
     margin-bottom: 15px;
