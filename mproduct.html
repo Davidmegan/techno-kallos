@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LuxWeb</title>
-    <link rel="stylesheet" href="styles/stylesm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/stylesf.css">
 </head>
 <body>
-    <div class="header">
-        <h2 class="logo">LuxWeb</h2>
-        <nav class="navigation">
-          <ul class="nav-list">
-            <li>Home</li>
-            <li>Category</li>
-            <li>About</li>
-            <li>Contact Us</li>
-          </ul>
-        </nav>
-      </div>
+    <div>
+        <div id="home" class="header">
+          <h2 class="logo">LuxWeb</h2>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <a href="./index.html#home"><li>HOME</li></a>
+              <a href="./index.html#category"><li>CATEGORY</li></a>
+              <a href="./index.html#about"><li>ABOUT</li></a>
+              <a href="./index.html#contact"><li>CONTACT US</li></a>
+            </ul>
+          </nav>
+        </div>
       <div class="gap">
       <div class="banner">
         <div class="banner-content">
@@ -28,6 +32,27 @@
       </div>
     </div>
     <div class="container">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="content">
+                    <img src="assets/images/w2.webp" alt="T Shirt">
+                    <div class="text">
+                        <h1>T Shirt</h1>
+                        <p>Zara full sleeve T Shirt</p>
+                        <p class="price">₹500 <del>₹1000</del></p>
+                        <p class="discount">50% off</p>
+                        <div class="sizes">
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                        <p class="stock">In stock</p>
+                        <button class="buynow">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="gallery">
             <div class="video">
                 <video id="video" width="100%" height="100%" autoplay muted loop>
@@ -38,110 +63,114 @@
                 <img src="assets/images/m1.webp" alt="">
                 <div class="desc">
                         <p class="brand">
-                            Brand 1
+                            Levi's
                         </p>
                         <p class="item">
-                            item 1
+                            T Shirt
                         </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹700</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
                 <img src="assets/images/m2.webp" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Alan Jones
                     </p>
                     <p class="item">
-                        item 1
+                        T Shirt
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹500</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w7.webp" alt="">
+                <img src="assets/images/m3.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        H&M
                     </p>
                     <p class="item">
-                        item 1
+                        Pant
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹1000</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w1.webp" alt="">
+                <img src="assets/images/m4.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Lifestyle
                     </p>
                     <p class="item">
-                        item 1
+                        T Shirt
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹500</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w2.webp" alt="">
+                <img src="assets/images/m5.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Adidas
                     </p>
                     <p class="item">
-                        item 1
+                        T Shirt
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹800</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w7.webp" alt="">
+                <img src="assets/images/m6.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Peter England
                     </p>
                     <p class="item">
-                        item 1
+                        Coat
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹1800</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w1.webp" alt="">
+                <img src="assets/images/m7.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Otto
                     </p>
                     <p class="item">
-                        item 1
+                        Shirt
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹500</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
             <div class="card">
-                <img src="assets/images/w2.webp" alt="">
+                <img src="assets/images/m8.jpg" alt="">
                 <div class="desc">
                     <p class="brand">
-                        Brand 1
+                        Peter England
                     </p>
                     <p class="item">
-                        item 1
+                        Shirt
                     </p>
-                    <p class="price"> $20</p>
+                    <p class="price"> ₹700</p>
                 </div>
-                <a href="#" class="buy-now">Buy now</a>
+                <button class="buy-now" id="myBtn">Buy</button>
             </div>
         </div>
     </div>
     <div class="footer">
         <div class="footer-text">Copyright <img class="footer-img" src="./assets/images/copyright.png" alt="">Luxweb 2024</div>
       </div>
+      <script src="./model.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="./styles/anif.js" ></script>
 </body> 
 </html>

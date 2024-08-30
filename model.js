@@ -27,8 +27,8 @@ document.querySelector(".gallery").addEventListener("click", function(event) {
         modalBrand.textContent = brand;
         modalItem.textContent = item;
         modalPrice.textContent = price;
-        modalDiscount.textContent = "50% off"; // Static value or add logic to get this from somewhere
-        modalStock.textContent = "In stock"; // Static value or add logic to get this from somewhere
+        modalDiscount.textContent = "50% off"; 
+        modalStock.textContent = "In stock";
 
         modal.style.display = "flex";
     }
